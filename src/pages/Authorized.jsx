@@ -48,12 +48,11 @@ const AuthComponent = ({
   const { currentUser } = user;
   const { routes = [] } = route;
   const isLogin = currentUser && currentUser.name;
-  console.log('isLogin', isLogin, !!isLogin);
+  console.log('isLogin', isLogin);
   return (
     <Authorized
       authority={getRouteAuthority(location.pathname, routes) || ''}
       // noMatch={isLogin ? <Redirect to="/404" /> : <Redirect to="/login" />}
-      // noMatch={<Redirect to="/login" />}
       noMatch={noMatch(getAuthority())}
     >
       {children}

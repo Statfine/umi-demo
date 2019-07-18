@@ -20,13 +20,24 @@ const adminRouter = {
       component: './Welcome',
     },
     {
-      path: '/admin/set',
+      path: '/admin/da',
       name: '控制台1',
       icon: 'video-camera',
       routes: [
-        { path: '/admin/set/one', name: '控制台1-1', component: './dashboardOne/one' },
-        { path: '/admin/set/two', name: '控制台1-2', component: './dashboardOne/two' },
+        {
+          path: '/admin/da/one',
+          name: '控制台1-1',
+          component: './dashboardOne/one',
+          icon: 'video-camera',
+        },
+        { path: '/admin/da/two', name: '控制台1-2', component: './dashboardOne/two' },
       ],
+    },
+    {
+      path: '/admin/set',
+      name: '设置',
+      icon: 'setting',
+      component: './set',
     },
   ],
 };
