@@ -10,12 +10,13 @@ const MenuModel = {
         path: '/admin/da',
         name: '控制台1',
         icon: 'video-camera',
-        children: [ //  此处不同router中routes
+        children: [ //  此处相同于router中routes
           { path: '/admin/da/one', name: '控制台1-1', component: './dashboardOne/one' },
           { path: '/admin/da/two', name: '控制台1-2', component: './dashboardOne/two', icon: 'video-camera' },
         ],
       },
       { path: '/admin/set', name: '设置', icon: 'setting', component: './set' },
+      { path: 'https://github.com/', name: 'Github外链', icon: 'github', target: '_blank' },
     ],
   },
   effects: {

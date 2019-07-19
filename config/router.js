@@ -56,6 +56,10 @@ const adminRouter = {
       name: 'policy2',
       component: './Welcome',
     },
+    {
+      path: 'http://baidu.com',
+      name: 'baidu',
+    },
   ],
 };
 // 404页面
