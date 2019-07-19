@@ -108,7 +108,8 @@ const BasicLayout = props => {
   );
 };
 
-export default connect(({ global, settings }) => ({
+export default connect(({ global, settings, menu }) => ({
   collapsed: global.collapsed,
+  menuData: menu.menuData, // 动态表单渲染, 取消则config路由渲染
   settings,
 }))(BasicLayout);

@@ -39,6 +39,23 @@ const adminRouter = {
       icon: 'setting',
       component: './set',
     },
+    {
+      path: '/admin/set2',
+      name: '设置2',
+      icon: 'setting',
+      component: './set',
+      authority: ['guest'], // 此处权限不匹配则不显示
+    },
+    {
+      path: '/admin/policy1',
+      name: 'policy1',
+      component: './Welcome',
+    },
+    {
+      path: '/admin/policy2',
+      name: 'policy2',
+      component: './Welcome',
+    },
   ],
 };
 // 404页面

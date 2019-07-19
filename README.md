@@ -61,4 +61,6 @@ authority.js 中获取到的(localStorage - antd-pro-authority)权限是否和ro
  *    2.不匹配执行noMatch做跳转
 
  authority.js 默认角色 guest
+
+ 动态路由设置添加menuModel，BasicLayout引入。参考：https://github.com/ant-design/ant-design-pro/issues/4358
 ```
