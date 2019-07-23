@@ -37,6 +37,9 @@ const errorHandler = error => {
       description: errorText,
     });
   }
+
+  const throwError = new Error(error);
+  throw throwError;
 };
 /**
  * 配置request请求时的默认参数
