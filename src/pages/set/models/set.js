@@ -15,19 +15,20 @@ export default {
         yield call(delay, 1000);
         const count = yield select(state => state.setModels.count);
         yield put({
-          type: 'setModels/changeCount',
+          type: 'changeCount',
           payload: count + 1,
         });
       } catch (e) {
         console.log(e);
       }
     },
+    // type 添加
     effectsRemove: [
       function* fn({ payload }, { call, put, select }) {
         yield call(delay, 1000);
         const count = yield select(state => state.setModels.count);
         yield put({
-          type: 'setModels/changeCount',
+          type: 'changeCount',
           payload: count - 1,
         });
       },

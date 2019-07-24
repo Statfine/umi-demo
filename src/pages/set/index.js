@@ -43,5 +43,6 @@ class SetPage extends React.Component {
 
 export default connect(({ setModels, loading }) => ({
   setModels,
+  // loading: loading.effects['setModels/effectsAdd'] || loading.effects['setModels/effectsRemove'],
   loading: loading.effects['setModels/effectsAdd'],
 }))(SetPage);
