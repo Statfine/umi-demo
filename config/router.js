@@ -78,6 +78,9 @@ const Rooters = [
           { path: '/', component: './user/login.js', authority: ['guest'] }, // 首页
           { path: '/login', component: './user/login.js', authority: ['guest'] }, // 登录页面
           adminRouter, // 控制台
+          { path: '/project/:id', component: './routerpage/routerOne.js' },
+          { path: '/zt/:id', component: './routerpage/routerTwo.js' },
+          { path: '/pz/:id', redirect: '/zt/:id', },
           notFoundRouter, // 404
         ],
       },
